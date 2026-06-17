@@ -3,9 +3,9 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 
 
-diabetes=pickle.load(open("diabetes.pkl","rb"))
-breastcancer=pickle.load(open("BreastCancer.pkl","rb"))
-heart=pickle.load(open("heart.pkl","rb"))
+diabetes=pickle.load(open("Saved models/diabetes.pkl","rb"))
+breastcancer=pickle.load(open("Saved models/BreastCancer.pkl","rb"))
+heart=pickle.load(open("Saved models/heart.pkl","rb"))
 
 with st.sidebar:
     selected=option_menu("MultiDisease Prediction System",['Diabetes prediction','Breast Cancer Prediction','Heart Disease prediction'],default_index=0)
